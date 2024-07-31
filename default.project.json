@@ -8,7 +8,10 @@
     },
 
     "ServerScriptService": {
-        "$path": "src/ServerScriptService"
+        "$path": "src/ServerScriptService",
+        "jobs_Scripts" :{
+          "$path" : "src/ServerScriptService/jobs"
+        }
     },
 
     "StarterPlayer": {

@@ -1,4 +1,3 @@
-local starterPlayer = game:GetService("StarterPlayer")
 local Players = game:GetService("Players")
 
 function statsCreate(player)
