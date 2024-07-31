@@ -10,7 +10,7 @@
     "ServerScriptService": {
         "$path": "src/ServerScriptService",
         "jobs_Scripts" :{
-          "$path" : "src/ServerScriptService/jobs"
+          "$path" : "src/ServerScriptService/jobs_Scripts"
         }
     },
 
