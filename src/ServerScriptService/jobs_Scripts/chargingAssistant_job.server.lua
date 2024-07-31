@@ -27,6 +27,7 @@ for _, boxs in ipairs(box) do
 				if isCarrying then
 					local character = player.character
 					local humanoid = character:FindFirstChildOfClass("Humanoid")
+
 					local box = proximity.Parent
 					--configs
 					box.CanCollide = false
@@ -34,20 +35,20 @@ for _, boxs in ipairs(box) do
 
 					local prompt = box.ProximityPrompt
 
+					--anim play
 					animTrack = humanoid:LoadAnimation(animation)
 					animTrack:Play()
-
 
 
 					local weld = Instance.new("Motor6D", character.HumanoidRootPart)
 					--configs
 					weld.Part0 = box
 					weld.Part1 = character.HumanoidRootPart
-
+					--weld posição relativa ao rootpart
 					weld.C0 = CFrame.new(0, 0.3, 1.6)
-
 					weld.Name = "box_Weld"
 
+					--definir cor
 					box_Color = box:FindFirstChild("box_Color").Value
 					disableAllPrompts()
 				end
